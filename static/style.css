@@ -1,0 +1,105 @@
+/* General page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3a8ef6, #6f3afa);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    padding: 40px 50px;
+    width: 400px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 26px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Input groups */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #6f3afa;
+    box-shadow: 0 0 4px rgba(111, 58, 250, 0.4);
+}
+
+/* Button styling */
+button {
+    background-color: #6f3afa;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3a8ef6;
+}
+
+/* Result box */
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #e8f0ff;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+}

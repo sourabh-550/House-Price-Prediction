@@ -1,0 +1,31 @@
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Dataset files
+*.csv
+*.xlsx
+*.xls
+
+# Model and cache files
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+
+.ipynb_checkpoints/
+.virtual_documents/

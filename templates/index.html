@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠 House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏡 House Price Prediction</h1>
+        <p>Enter the details below to estimate your house price.</p>
+
+        <form action="/predict" method="post">
+
+            <!-- Example Inputs -->
+            <div class="input-group">
+                <label>Lot Area (sq ft):</label>
+                <input type="number" name="LotArea" step="any" required>
+            </div>
+
+            <div class="input-group">
+                <label>Overall Quality (1-10):</label>
+                <input type="number" name="OverallQual" step="any" required>
+            </div>
+
+            <div class="input-group">
+                <label>Year Built:</label>
+                <input type="number" name="YearBuilt" required>
+            </div>
+
+            <div class="input-group">
+                <label>GrLivArea (Above ground living area in sq ft):</label>
+                <input type="number" name="GrLivArea" step="any" required>
+            </div>
+
+            <div class="input-group">
+                <label>Full Bathrooms:</label>
+                <input type="number" name="FullBath" step="any" required>
+            </div>
+
+            <div class="input-group">
+                <label>Garage Cars (capacity):</label>
+                <input type="number" name="GarageCars" step="any" required>
+            </div>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">
+                <h2>{{ prediction_text }}</h2>
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
